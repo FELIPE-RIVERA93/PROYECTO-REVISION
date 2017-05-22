@@ -1,76 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registro cliente</title>
-	<meta charset="utf8">
-		<meta name="viewport" content="width=device=width,initial=scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-
-</head>
-<body>
-	<div class="row">
-		<div class="col-md-6 col-xs-12 text-left">
-			<label>Matricula</label><br>
-			<input id="txtmatricula" type="text" maxlength="11">
-		</div>
-		<div class="col-md-6 col-xs-12 text-left">
-			<label>Nombre</label><br>
-			<input id="txtnombre" type="text" maxlength="100">
-		</div>
-	</div>
+<style>
+	#cabeza{
+		background: -webkit-linear-gradient(left top, gray , red);
+	}
 
 
-	<div class="row">
-		<div class="col-md-6 col-xs-12 text-left">
-			<label>Apellido Paterno</label><br>
-			<input id="txtpaterno" type="text" maxlength="50">
-		</div>
-		<div class="col-md-6 col-xs-12 text-left">
-			<label>Apellido Materno</label><br>
-			<input id="txtmaterno" type="text" maxlength="40">
-		</div>
-	</div>
+</style>
 
 
-	<div class="row">
-		<div class="col-md-6 col-xs-12 text-left">
-			<label>Direccion</label><br>
-			<input id="txtdireccion" type="text" maxlength="40">
-		</div>
-		<div class="col-md-6 col-xs-12 text-left">
-			<label>Telefono</label><br>
-			<input id="txttelefono" type="text" maxlength="10">
-		</div>
-	</div>
+<div id = "cabeza" class = "modal-header" class = "responsi">
+<center><h4 id = "titulo"><b>Registro de Usuarios</b></h4></center>
+	
+	<div class = "modal-body">
+	<!--Aqui va el formilario de clientes-->
+		
 
 
-	<div class="row">
-	<div class="col-md-6 col-xs-12 text-left">
-			<label>Correo</label><br>
-			<input id="txtcorreo" type="text" maxlength="30">
-		</div>
+						<center><label>Matricula</label></center>
+						<center><input id="txtmatricula" type="text" maxlength="11"></center>
+							
+						
+						<center><label>Nombre</label></center>
+						<center><input id="txtnombre" type="text" maxlength="100"></center>
+						
+							
+						<center><label>Apellido Paterno</label></center>	
+						<center><input id="txtpaterno" type="text" maxlength="50"></center>
+						
+				
+						<center><label>Apellido Materno</label></center>
+						<center><input id="txtmaterno" type="text" maxlength="40"></center>
+				
+						<center><label>Direccion</label></center>
+						<center><input id="txtdireccion" type="text" maxlength="40"></center>
+					
+						<center><label>Telefono</label></center>
+						<center><input id="txttelefono" type="text" maxlength="10"></center>
+						
+
+						<center><label>Correo</label></center>
+						<center><input id="txtcorreo" type="text" maxlength="30"></center>			
+				
 
 
-	</div>
-	<div class="row">
-		<button id="btnregistro" class="btn btn-success" onclick="capturaDatosCliente()">
-			<span class="glyphicon glyphicon-save"></span>
-			Registrar Información
+				
+				<div class="row"><br>
+				<center>
+					<button id="btnregistro" class="btn btn-success" onclick="capturaDatosCliente()">
+						<span class="glyphicon glyphicon-save"></span>Registrar</button>
+				</center>
+				
+				</div>
+				<div id="respuesta" class="row"></div>
+			</div>
+
+
+	<div class = "modal-footer; text-center">
+		<button type = "btn btn-primary"
+				class="btn btn-primary"
+				onclick = "cerrarclientes()" style="background:blue;">
+				<span class = "glyphycon glyphycon-remove"></span>
+				&nbsp;&nbsp;Cerrar
 		</button>
+
 	</div>
-	<div id="respuesta" class="row"></div>
-
-
-
-
-
-
-
-	<script src="js/jquery.js"
-			type="text/javascript"></script>
-	<script src="js/bootstrap.min.js"
-			type="text/javascript"></script>
-	<script src="js/registrocliente.js" 
-			type="text/javascript" ></script>
-</body>
-</html>
+</div>

@@ -23,21 +23,21 @@ $contrasenia="root";
 			}
 			else{
 
-				$query = "Insert into cliente (Apellido_Materno,Apellido_Paterno, Correo, Direccion,ID_Clientes, Nombre_Cliente, Telefono) 
+				$query = "Insert into cliente (Apellido_Paterno,Apellido_Materno, Correo, Direccion,ID_Clientes, Nombre_Cliente, Telefono) 
 					values ('".$apellido1."','".$apellido2."','".$correo."','".$direccion."',".$matricula.",'".$nombre."','".$telefono."')";
 
-				echo $query;
+				//echo $query;
 				$resultadooperacion = $conexionMysqli -> query($query);
 				if ($resultadooperacion) {
 					?>
 						<div class="text-success text-center">
-							<p>Operaci&oacute;n Realizada con &eacute;xito</p>
+							<p>Datos enviados Correctamente</p>
 						</div>
 					<?php
 				} else{
 					?>
 						<div class="text-danger text-center">
-							<p>Operaci&oacute;n <b>NO</b> Realizada</p>
+							<p>Los Datos <b>NO</b>fueron enviados</p>
 						</div>
 					<?php
 				}
